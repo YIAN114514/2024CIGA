@@ -40,3 +40,17 @@ The following packages were 已更新:
   com.unity.collab-proxy 从版本 1.13.5 到 2.0.7
   com.unity.timeline 从版本 1.6.2 到 1.7.5
   com.unity.visualscripting 从版本 1.7.6 到 1.9.0
+
+=== Fri Jul  5 16:40:02 2024
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were 已添加:
+  com.unity.2d.pixel-perfect@5.0.3
+  com.unity.2d.sprite@1.0.0
+  com.unity.2d.tilemap@1.0.0
+  com.unity.2d.tilemap.extras@3.1.2
+  com.unity.ai.navigation@1.1.5
+  com.unity.cinemachine@2.9.7
+  com.unity.postprocessing@3.4.0
