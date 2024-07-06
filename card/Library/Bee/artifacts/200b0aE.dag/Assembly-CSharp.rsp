@@ -372,6 +372,7 @@
 "Assets/balatro-feel-main/Assets/Scripts/VisualCardsHandler.cs"
 "Assets/balatro-feel-main/Assets/Scripts/_SciptableObjects/CurveParameters.cs"
 "Assets/balatro-feel-main/Assets/Scripts/_Utility/ExtensionMethods.cs"
+"Assets/CardScale.cs"
 "Assets/Scripts/CreateMap.cs"
 "Assets/Scripts/CreateNumbers.cs"
 "Assets/Scripts/Tilemapnumber.cs"

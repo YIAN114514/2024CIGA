@@ -5,7 +5,10 @@ using TMPro;
 
 public class Tilemapnumber : MonoBehaviour
 {
-    public int[] numberID;
+    public int[,] mapID;
+
+    public int iDx;
+    public int iDy;
 
     public TextMeshProUGUI numberTXT;
 
@@ -16,11 +19,19 @@ public class Tilemapnumber : MonoBehaviour
 
     private void OnEnable()
     {
-
+        realNumber = Random.Range(0, 9);//暂时随机
 
         waitForChangeTime = new WaitForSeconds(changeTime);
 
         StartCoroutine(ChangeNumberCoroutine(realNumber));
+    }
+
+    public void SetMapID(int x ,int y)
+    {
+        iDx = x;
+        iDy = y;
+
+        mapID = new int[x, y];
     }
 
 
