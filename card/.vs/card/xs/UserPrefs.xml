@@ -1,15 +1,12 @@
 ﻿<Properties StartupConfiguration="{BA03EC5E-B871-4236-62D1-D4BEBC19DE39}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/balatro-feel-main/Assets/Scripts/CardVisual.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CreateMap.cs">
     <Files>
-      <File FileName="Assets/balatro-feel-main/Assets/Scripts/HorizontalCardHolder.cs" Line="143" Column="65" />
-      <File FileName="Assets/balatro-feel-main/Assets/Scripts/VisualCardsHandler.cs" Line="8" Column="40" />
-      <File FileName="Assets/CreateMap.cs" Line="48" Column="68" />
-      <File FileName="Assets/CreateNumbers.cs" Line="10" Column="1" />
-      <File FileName="Assets/Scripts/Tilemapnumber.cs" Line="32" Column="17" />
-      <File FileName="Assets/balatro-feel-main/Assets/Scripts/CardVisual.cs" Line="188" Column="40" />
-      <File FileName="Assets/CardScale.cs" Line="32" Column="73" />
-      <File FileName="Assets/balatro-feel-main/Assets/Scripts/Card.cs" Line="41" Column="49" />
-      <File FileName="Assets/cardFunc01.cs" Line="7" Column="5" />
+      <File FileName="Assets/balatro-feel-main/Assets/Scripts/HorizontalCardHolder.cs" Line="23" Column="3" />
+      <File FileName="Assets/CardScale.cs" Line="38" Column="35" />
+      <File FileName="Assets/balatro-feel-main/Assets/Scripts/Card.cs" Line="12" Column="1" />
+      <File FileName="Assets/balatro-feel-main/Assets/Scripts/CardVisual.cs" Line="182" Column="37" />
+      <File FileName="Assets/balatro-feel-main/cardFunc01.cs" Line="13" Column="1" />
+      <File FileName="Assets/Scripts/CreateMap.cs" Line="10" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

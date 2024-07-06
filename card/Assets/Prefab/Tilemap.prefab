@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.14901961}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -259,6 +259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 377e8d6862d974309a0594e9bb99e124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  iDx: 0
+  iDy: 0
   numberTXT: {fileID: 9148071428409880489}
   realNumber: 0
   changeTime: 0.08

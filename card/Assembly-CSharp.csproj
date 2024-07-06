@@ -65,6 +65,7 @@
     <Compile Include="Assets/Scripts/CreateMap.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets/Scripts/cardFunc01.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs" />
@@ -73,7 +74,6 @@
     <Compile Include="Assets/Scripts/CardScale.cs" />
     <Compile Include="Assets/Scripts/CreateNumbers.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Scripts/CardVisual.cs" />
-    <Compile Include="Assets/cardFunc01.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Scripts/VisualCardsHandler.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Scripts/_SciptableObjects/CurveParameters.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Scripts/ShaderCode.cs" />
@@ -359,11 +359,11 @@
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets/balatro-feel-main/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2022.3.9f1c1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

@@ -8,11 +8,17 @@ using UnityEngine.UI;
 
 public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler, IPointerUpHandler, IPointerDownHandler
 {
+
+
     private Canvas canvas;
     private Image imageComponent;
     [SerializeField] private bool instantiateVisual = true;
     private VisualCardsHandler visualHandler;
     private Vector3 offset;
+
+    [Header("mapSize")]
+    int mapSize;
+    [SerializeField] GameObject mapTile; 
 
     [Header("Movement")]
     [SerializeField] private float moveSpeedLimit = 50;
@@ -24,7 +30,7 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
     private float pointerUpTime;
 
     [Header("Visual")]
-    [SerializeField] private GameObject cardVisualPrefab;
+    public GameObject cardVisualPrefab;
     public CardVisual cardVisual;
 
     [Header("States")]
@@ -32,17 +38,26 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
     public bool isDragging;
     [HideInInspector] public bool wasDragged;
 
+    //[Header("DropArea")]
+    //public GameObject DropArea;
+    //RectTransform DropAreaRect;
+
     [Header("Events")]
     [HideInInspector] public UnityEvent<Card> PointerEnterEvent;
     [HideInInspector] public UnityEvent<Card> PointerExitEvent;
     [HideInInspector] public UnityEvent<Card, bool> PointerUpEvent;
     [HideInInspector] public UnityEvent<Card> PointerDownEvent;
     [HideInInspector] public UnityEvent<Card> BeginDragEvent;
+    [HideInInspector] public UnityEvent<Card> CardDownEvent;
     [HideInInspector] public UnityEvent<Card> EndDragEvent;
     [HideInInspector] public UnityEvent<Card, bool> SelectEvent;
 
     void Start()
     {
+        mapSize = (int)mapTile.GetComponent<RectTransform>().sizeDelta.x;
+
+        //DropAreaRect = DropArea.GetComponent<RectTransform>();
+
         canvas = GetComponentInParent<Canvas>();
         imageComponent = GetComponent<Image>();
 
@@ -90,11 +105,31 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
 
     public void OnDrag(PointerEventData eventData)
     {
+        //Vector2 snappedPosition = SnapToGrid(gameObject.GetComponent<RectTransform>().anchoredPosition);
+        //RectTransform cardrect = gameObject.GetComponent<RectTransform>();
+        //cardrect.anchoredPosition = snappedPosition;
+    }
+
+
+    private Vector2 SnapToGrid(Vector2 position)
+    {
+        float x = Mathf.Round(position.x / mapSize) * mapSize;
+        float y = Mathf.Round(position.y / mapSize) * mapSize;
+        y -= 50;
+        return new Vector2(x, y);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         EndDragEvent.Invoke(this);
+        CardDownEvent.Invoke(this);
+
+        //对其网格
+        Vector2 snappedPosition = SnapToGrid(gameObject.GetComponent<RectTransform>().anchoredPosition);
+        RectTransform cardrect = gameObject.GetComponent<RectTransform>();
+        cardrect.anchoredPosition = snappedPosition;
+
+
         isDragging = false;
         canvas.GetComponent<GraphicRaycaster>().enabled = true;
         imageComponent.raycastTarget = true;

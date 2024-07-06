@@ -20,7 +20,7 @@ public class HorizontalCardHolder : MonoBehaviour
     public List<Card> cards;
 
     bool isCrossing = false;
-    [SerializeField] private bool tweenCardReturn = true;
+//    [SerializeField] private bool tweenCardReturn = true;
 
     void Start()
     {
@@ -65,15 +65,15 @@ public class HorizontalCardHolder : MonoBehaviour
 
     void EndDrag(Card card)
     {
-        if (selectedCard == null)
-            return;
+        //if (selectedCard == null)
+        //    return;
 
-        selectedCard.transform.DOLocalMove(selectedCard.selected ? new Vector3(0,selectedCard.selectionOffset,0) : Vector3.zero, tweenCardReturn ? .15f : 0).SetEase(Ease.OutBack);
+        //selectedCard.transform.DOLocalMove(selectedCard.selected ? new Vector3(0, selectedCard.selectionOffset, 0) : Vector3.zero, tweenCardReturn ? .15f : 0).SetEase(Ease.OutBack);
 
-        rect.sizeDelta += Vector2.right;
-        rect.sizeDelta -= Vector2.right;
+        //rect.sizeDelta += Vector2.right;
+        //rect.sizeDelta -= Vector2.right;
 
-        selectedCard = null;
+        //selectedCard = null;
 
     }
 

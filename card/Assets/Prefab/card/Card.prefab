@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 7486306067316991545}
   - component: {fileID: 8562604021319485591}
   - component: {fileID: -3148967189081000219}
+  - component: {fileID: -2928799040509044925}
+  - component: {fileID: 3995311867012674520}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -61,9 +63,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instantiateVisual: 1
+  mapTile: {fileID: 2091367765356896139, guid: 0903ccaf1771242d6b97f3c780453f2d, type: 3}
   moveSpeedLimit: 50
   selected: 0
-  selectionOffset: 25
+  selectionOffset: 0
   cardVisualPrefab: {fileID: 7310339964073049012, guid: bddd0263814164da396aa8d1438dd810, type: 3}
   cardVisual: {fileID: 0}
   isHovering: 0
@@ -82,6 +85,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   BeginDragEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  CardDownEvent:
     m_PersistentCalls:
       m_Calls: []
   EndDragEvent:
@@ -176,3 +182,29 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 8, y: 8}
   m_UseGraphicAlpha: 1
+--- !u!114 &-2928799040509044925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8994356602663114153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e3cde98808341c4abd6fce9adc641a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 3f1086acb88774a999933198bc505ac1, type: 3}
+--- !u!114 &3995311867012674520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8994356602663114153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5af8f7a6abe0c403999dd1c97fc7a912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectCard: {fileID: 133173175211647385}
