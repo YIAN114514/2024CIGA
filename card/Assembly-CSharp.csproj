@@ -70,9 +70,10 @@
     <Compile Include="Assets/balatro-feel-main/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs" />
-    <Compile Include="Assets/CardScale.cs" />
+    <Compile Include="Assets/Scripts/CardScale.cs" />
     <Compile Include="Assets/Scripts/CreateNumbers.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Scripts/CardVisual.cs" />
+    <Compile Include="Assets/cardFunc01.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Scripts/VisualCardsHandler.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Scripts/_SciptableObjects/CurveParameters.cs" />
     <Compile Include="Assets/balatro-feel-main/Assets/Scripts/ShaderCode.cs" />

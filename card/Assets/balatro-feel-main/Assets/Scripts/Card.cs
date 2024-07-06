@@ -25,7 +25,7 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
 
     [Header("Visual")]
     [SerializeField] private GameObject cardVisualPrefab;
-    [HideInInspector] public CardVisual cardVisual;
+    public CardVisual cardVisual;
 
     [Header("States")]
     public bool isHovering;
@@ -106,6 +106,8 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
             yield return new WaitForEndOfFrame();
             wasDragged = false;
         }
+
+        //todo 
     }
 
     public void OnPointerEnter(PointerEventData eventData)

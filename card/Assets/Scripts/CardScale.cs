@@ -8,11 +8,16 @@ public class CardScale : MonoBehaviour
     public RectTransform cardRoot;
 
     public RectTransform cardPic;
+
+    public RectTransform cardTouch;
+
     public Sprite sprite; // 要加载的图片的Sprite
 
     void Start()
     {
         cardRoot = GetComponent<RectTransform>();
+
+        cardTouch = gameObject.GetComponent<CardVisual>().parentCard.gameObject.GetComponent<RectTransform>();
 
         if (cardRoot != null && sprite != null)
         {
@@ -23,6 +28,8 @@ public class CardScale : MonoBehaviour
             float imageHeight = sprite.rect.height;
 
             cardPic.sizeDelta = new Vector2(imageWidth, imageHeight);
+
+            cardTouch .sizeDelta = new Vector2(imageWidth, imageHeight);
 
             //cardRoot.sizeDelta.x
 

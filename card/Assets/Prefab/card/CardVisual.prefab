@@ -132,7 +132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9157190824811683565
 RectTransform:
   m_ObjectHideFlags: 0
@@ -342,15 +342,15 @@ MonoBehaviour:
   visualShadow: {fileID: 9157190824811683565}
   shakeParent: {fileID: 3449025543118524474}
   tiltParent: {fileID: 5862976466474931636}
-  cardImage: {fileID: 0}
+  cardImage: {fileID: 6882677585538241787}
   followSpeed: 25
   rotationAmount: 70
   rotationSpeed: 50
   autoTiltAmount: 15
   manualTiltAmount: 30
   tiltSpeed: 40
-  scaleAnimations: 1
-  scaleOnHover: 1.07
+  scaleAnimations: 0
+  scaleOnHover: 1
   scaleOnSelect: 1.2
   scaleTransition: 0.15
   scaleEase: 27
@@ -411,4 +411,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardRoot: {fileID: 5647236407421411534}
   cardPic: {fileID: 5588485843770903340}
+  cardTouch: {fileID: 0}
   sprite: {fileID: 21300000, guid: 3f1086acb88774a999933198bc505ac1, type: 3}
