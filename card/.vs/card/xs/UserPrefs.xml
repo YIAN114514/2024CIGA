@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{BA03EC5E-B871-4236-62D1-D4BEBC19DE39}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Tilemapnumber.cs">
+    <Files>
+      <File FileName="Assets/balatro-feel-main/Assets/Scripts/HorizontalCardHolder.cs" Line="19" Column="15" />
+      <File FileName="Assets/balatro-feel-main/Assets/Scripts/VisualCardsHandler.cs" />
+      <File FileName="Assets/CreateMap.cs" Line="12" Column="1" />
+      <File FileName="Assets/Tilemap.cs" Line="27" Column="59" />
+      <File FileName="Assets/CreateNumbers.cs" Line="10" Column="5" />
+      <File FileName="Assets/Scripts/Tilemapnumber.cs" Line="6" Column="27" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7acd08de-7aaa-4252-954a-170099c2609f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
