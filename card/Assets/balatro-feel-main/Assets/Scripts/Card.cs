@@ -51,6 +51,7 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
     [HideInInspector] public UnityEvent<Card> CardDownEvent;
     [HideInInspector] public UnityEvent<Card> EndDragEvent;
     [HideInInspector] public UnityEvent<Card, bool> SelectEvent;
+    //[HideInInspector] public UnityEvent<Card> CountResultEvent;
 
     void Start()
     {
@@ -122,7 +123,6 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
     public void OnEndDrag(PointerEventData eventData)
     {
         EndDragEvent.Invoke(this);
-        CardDownEvent.Invoke(this);
 
         //对其网格
         Vector2 snappedPosition = SnapToGrid(gameObject.GetComponent<RectTransform>().anchoredPosition);
@@ -140,6 +140,8 @@ public class Card : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHand
         {
             yield return new WaitForEndOfFrame();
             wasDragged = false;
+
+            CardDownEvent.Invoke(this);
         }
 
         //todo 
